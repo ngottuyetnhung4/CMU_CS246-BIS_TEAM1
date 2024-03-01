@@ -1,0 +1,11 @@
+ try {
+            double num1 = Double.parseDouble(a.getText());          
+                if (num1 <= 0) {
+                    c.setText("Error! Numbers cannot be negative or zero!");
+                } else {
+                    double num3 = Math.sqrt(num1); // Calculate the square root of num1
+                    c.setText("" + num3);
+                }
+        } catch (NumberFormatException e) {
+            c.setText("Error! Please re-enter the number (num1).");
+        }
