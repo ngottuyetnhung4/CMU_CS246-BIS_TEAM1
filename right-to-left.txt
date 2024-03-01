@@ -1,0 +1,11 @@
+ String backSp = null;
+        
+        if (a.getText().length() > 0) {
+            StringBuilder sb = new StringBuilder(a.getText());
+            sb.deleteCharAt(a.getText().length() - 1);
+            backSp = sb.toString();
+            a.setText(backSp);
+        } else if(a.getText().length() == 0){
+             c.setText("No values have been entered yet!");
+        }
+    }                  
